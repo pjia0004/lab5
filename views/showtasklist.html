@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                Task Name
+            </th>
+            <th>
+                Task Due Date
+            </th>
+            <th>
+                Task Desc
+            </th>
+        </tr>
+        <% for(let i=0; i<task.length;i++){ %>
+            <tr>
+                <td>
+                    <%= task[i].taskname %>
+                </td>
+                <td>
+                    <%= task[i].taskduedate %>
+                </td>
+                <td>
+                    <%= task[i].taskdesc %>
+                </td>
+            </tr>
+        <%} %>
+    </table>
+</body>
+</html>
